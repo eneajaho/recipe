@@ -1,0 +1,19 @@
+<a class="text-decoration-none text-dark" (click)="onSelected()" href="#">
+  <div class="card mb-2">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-7">
+          <h5 class="card-title">{{ recipe.name }}</h5>
+          <p class="card-text">{{ recipe.description }}</p>
+        </div>
+        <div class="col-5">
+          <img
+            class="img-fluid"
+            [src]="recipe.imagePath"
+            alt="{{ recipe.name }}"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
